@@ -130,7 +130,6 @@
 }
 
 /* ----- VIDEO ----- */
-/* Video container adjusted to center of page */
 .video-container {
   display: grid;
   justify-content: space-around;
