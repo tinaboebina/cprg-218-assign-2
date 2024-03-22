@@ -7,7 +7,8 @@
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" type="text/css" href="styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="styles/global.css">
-  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="stylesheet" type="text/css" href="styles/assign_2.css">
+  <link rel="stylesheet" type="text/css" href="styles/card_starter.css">
   <!----GOOGLE FONT---->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,33 +16,32 @@
   <!----FONT AWESOME LINK---->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!----JAVA---->
-  <script async src="script.js"></script>
-  <title>Tina's Café</title>
+  <script async src="styles/script.js"></script>
+  <title>Banh Mi Boulevard</title>
 </head>
 
 <body>
   <!----HERO IMAGE---->
   <section id="hero" class="hero-container">
-    <img src="assets/cafe.jpg" alt="cafe with large windows and wooden funiture">
+    <img src="assets/restaurant.jpeg" alt="vietnamese street restuarant">
     <div class="hero-text">
-      <h1>Welcome to Tina's Cafe</h1>
-      <h2>Come in and say hello</h2>
+      <h1>Banh Mi Boulevard</h1>
     </div>
   </section>
 
   <!----CONTENT---->
   <section id="content" class="container content-container">
     <div class="content-text">
-      <h2>Hello nice to meet you</h2>
+      <h2>Hello, welcome back to Vietnam</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fuga porro sequi ipsa deserunt sed expedita vitae facere ea, similique soluta facilis amet minus. Ratione sit doloremque illo perspiciatis dicta?</p>
-      <button id="button">learn more</button>
+      <button id="button">Rerserve Now</button>
     </div>
-    <img class = "content-img" src="assets/coffee.jpg" alt="three cups of coffee with latte art on a table with plants">
+    <img class = "content-img" src="assets/streetpans.jpg" alt="two frying pans on an open fire">
   </section>
 
   <!----ACCORDION w/ FONT AWESOME ICONS---->
   <section id="services" class="container accordion-container">
-      <button class="accordion">Coffee
+      <button class="accordion">Food
         <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path fill="#ffffff" d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg>
       </button>
@@ -49,7 +49,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laboriosam, eveniet ut cupiditate in impedit eaque vitae quidem dolorum ex!.</p>
       </div>
 
-      <button class="accordion">Food
+      <button class="accordion">Drinks
         <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path fill="#ffffff" d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg>
       </button>
@@ -57,7 +57,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quis id perspiciatis, saepe similique molestias beatae quo. Voluptate, praesentium esse.</p>
       </div>
 
-      <button class="accordion">Merchandise<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+      <button class="accordion">Dessert<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path fill="#ffffff" d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg>
         </button>
       <div class="panel">
@@ -65,6 +65,47 @@
     </div>
   </section>
 
+  <!--CARDS-->
+</div>
+<section class="container">
+  <ul class="card-container">
+    <li class="card">
+      <img src="assets/pho.jpeg" alt="white blossoms">
+      <div class="card-content">
+        <h3 class="header">
+          pho
+        </h3>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </li>
+    <li class="card">
+      <img src="assets/banhmi.jpeg" alt="yellow daffodils">
+      <div class="card-content">
+        <h3 class="header">
+          banh mi
+        </h3>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </li>
+    <li class="card">
+      <img src="assets/bunbohue.jpeg" alt="white daisy">
+      <div class="card-content">
+        <h3 class="header">
+          Bun Bo Hue
+        </h3>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </li>
+  <!--YOUTUBE VIDEO-->
+  <div class="video-container">
+    <iframe class = "video" src="https://www.youtube.com/embed/CzCrm7ihirY?si=yVC-qKt1QxgVUoT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
   <!----FOOTER---->
   <div class="footer-container">
     <footer>
@@ -80,16 +121,6 @@
             </ul>
         </nav>
     </div>
-
-    <!----GOOGLE MAPS---->
-    <div>
-      <p>Address</p><br>1301 16 Ave NW<br>Calgary, AB<br>T2M 0L4
-    </div>
-      <div class="map-container">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.376607126904!2d-114.092088237562!3d51.064597602505415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f927202bf3f%3A0x16877e49fcc8dbcb!2sStan%20Grad%20Centre!5e0!3m2!1sen!2sca!4v1709693107701!5m2!1sen!2sca"
-      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      </div>
 
     <!----COPYRIGHT DATE---->
       <div id="footer">&copy; Tina Le, <span id="currentYear"></span>
