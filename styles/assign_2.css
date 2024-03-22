@@ -64,13 +64,13 @@
 
 /*----- ACCORDION -----*/
 .accordion-container {
-  background-color: #4a705b;
-  color: #fff;
+  background-color: #dad0bf;
+  color: black;
   height: auto;
 }
 
 .accordion {
-  background-color: #4a705b;
+  background-color: #bd7c3f;
   color: #ffffff;
   cursor:pointer;
   padding: 18px;
@@ -84,7 +84,7 @@
 }
 
 .active, .accordion:hover { 
-  background-color: #9ba666; /* CHANGE HOVER COLOUR */
+  background-color: #8a442b; /* CHANGE HOVER COLOUR */
 }
 
 .accordion svg {
@@ -95,7 +95,7 @@
 
 .panel {
   padding: 0 18px;
-  background-color: #485930;
+  background-color: #dad0bf;
   display: none;
   overflow: hidden;
 }
@@ -163,22 +163,24 @@ footer {
 }
 
 /* Video container adjusted to center of page */
-.video-container {
-  display: flex;
+.video-container{
+  grid-column: span 3;
+  position: relative;
   justify-content: center;
   padding: 2rem;
   aspect-ratio: 16 / 9; /* Maintain video aspect ratio in different screen sizes */
 }
+
 .video {
-  width: 100%; /* Video will fill container */
-  
+  width: 100%; /* Video will fill container horizontally */
+  height: auto; /* Maintain aspect ratio */
 }
 
 @media screen and (min-width: 1200px) {
   .video {
-      width: 85%; /* Adjusted video to be more aligned with photo cards */
-      height: 85%;
-}
+    width: 85%; /* Adjusted video to be more aligned with photo cards */
+    height: 85%; /* Maintain aspect ratio */
+  }
 }
 
 #footer {
