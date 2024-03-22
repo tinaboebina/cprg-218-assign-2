@@ -1,3 +1,4 @@
+// ES6 SYNTAX //
 //----- TOGGLE ACCORDION -----//
 const acc = document.getElementsByClassName("accordion"); // SELECT ACCORDION
 

@@ -15,7 +15,7 @@
 }
 
 .hero-text {
-  font-family: "Rampart One", sans-serif; /* GOOGLE FONT */
+  font-family: "Rampart One", Arial, Helvetica, sans-serif; /* GOOGLE FONT + back up fonts */
   font-weight: 500;
   font-style: normal;
   color: white;
@@ -102,7 +102,7 @@
 
 /* ----- CARDS ----- */
 .card-container {
-  gap: 10px; /* Gap of 20 pixels between all animal cards */
+  gap: 10px; /* Gap of 20 pixels between all menu cards */
 }
 
 .card {
@@ -121,42 +121,27 @@
   }
 }
 
-/* Tablet */
+/* Tablet + Desktop */
 @media screen and (min-width: 768px) {
-  .card-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Two columns, each occupying an equal fraction of available space */
-  }
-}
-
-/* Desktop */
-@media screen and (min-width: 1200px) {
   .card-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* Three columns, each occupying an equal fraction of available space */
   }
 }
 
+/* ----- VIDEO ----- */
 /* Video container adjusted to center of page */
 .video-container {
-  position: relative;
-  width: 100%; /* Ensure the video container spans the full width of the viewport */
+  display: grid;
+  justify-content: space-around;
+  width: 100%;
   aspect-ratio: 16 / 9; /* Maintain video aspect ratio in different screen sizes */
 }
 
 .video {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: grid;
+  grid-template-columns: 1;
   width: 100%; /* Video will fill the entire width of the viewport */
-  object-fit: cover; /* Ensure the video fills the entire viewport */
-}
-
-@media screen and (min-width: 1200px) {
-  .video {
-    width: 85%; /* Adjusted video to be more aligned with photo cards */
-    height: 85%; /* Maintain aspect ratio */
-  }
 }
 
 /*----- FOOTER -----*/
@@ -182,7 +167,7 @@ footer {
 
 #footer {
   text-align: center;
-  grid-column: span 5; /* EXTEND COPYRIGHT TO SPAN THE WHOLE PAGE */
+  grid-column: span 4; /* EXTEND COPYRIGHT TO SPAN THE WHOLE PAGE */
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
