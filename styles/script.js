@@ -1,26 +1,21 @@
 //----- TOGGLE ACCORDION -----//
-var acc = document.getElementsByClassName("accordion"); // SELECT ACCORDION
-var i;
+const acc = document.getElementsByClassName("accordion"); // SELECT ACCORDION
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", () => {
+    acc[i].classList.toggle("active");
 
-    var panel = this.nextElementSibling;
-    var panelStyle = window.getComputedStyle(panel);
-    if (panelStyle.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+    const panel = acc[i].nextElementSibling;
+    const panelStyle = window.getComputedStyle(panel);
+    panelStyle.display === "block" ? panel.style.display = "none" : panel.style.display = "block";
   });
 }
 
 //----- UPDATE FOOTER TO CURRENT YEAR -----//
-function updateFooterDate() {
-    var currentYear = new Date().getFullYear();
+const updateFooterDate = () => {
+    const currentYear = new Date().getFullYear();
     document.getElementById("currentYear").textContent = currentYear;
-}
+};
 
 updateFooterDate();
 
