@@ -170,9 +170,6 @@ img {
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* Three columns, each occupying an equal fraction of available space */
   }
-  .card:last-child {
-      grid-column: span 3; /* The last card will revert back to spanning one column (1fr) */
-  }
 }
 
 /*----- FOOTER -----*/
