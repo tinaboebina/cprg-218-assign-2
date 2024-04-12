@@ -1,3 +1,7 @@
+/*----- Accessibility Considerations-----*/
+@media (prefers-reduced-motion: reduce) {
+  /* I was unable to implement this feedback */
+}
 /*----- FONTS -----*/
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -81,6 +85,12 @@ button {
   font-weight: 500;
 }
 
+/*----- RON'S FEEDBACK change hover colour -----*/
+.hover-button:hover {
+  background-color: #bd7c3f;
+  color: white;
+}
+
 /*----- ACCORDION -----*/
 .accordion-container {
   background-color: #dad0bf;
@@ -105,6 +115,11 @@ button {
 
 .active, .accordion:hover { 
   background-color: #8a442b; /* CHANGE HOVER COLOUR */
+}
+
+/* RON'S FEEDBACK ON ANIMATION INTERACTIONS */
+.accordion:focus {
+  outline: 2px solid blue;
 }
 
 .accordion svg {
@@ -217,7 +232,7 @@ button {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* FIVE COLUMNS */
+  grid-template-columns: repeat(4, 1fr);
   text-align: left;
   padding: 1vh;
   background-color: #c1b5a7;
@@ -228,6 +243,7 @@ footer {
 .nav {
   text-align: left;
   padding-left: 4vh;
+  line-height: 1.5;
 }
 
 #footer {
@@ -235,4 +251,11 @@ footer {
   grid-column: 1 / -1; /* Span all columns */
   padding-top: 1vh;
   padding-bottom: 1vh;
+
+}
+
+/*----- RON'S FEEDBACK (Add hover effect for links) -----*/
+.nav .list li a:hover {
+  color:white; /* Change color on hover */
+  background-color: #8a442b; /* Change background color on hover */
 }
