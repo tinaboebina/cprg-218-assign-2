@@ -100,7 +100,7 @@ button {
 }
 
 .accordion {
-  background-color: #bd7c3f;
+  background-color: #63301e;
   color: #ffffff;
   cursor:pointer;
   padding: 18px;
@@ -114,7 +114,7 @@ button {
 }
 
 .active, .accordion:hover { 
-  background-color: #63301e; /* CHANGE HOVER COLOUR */
+  background-color: #4a705b; /* CHANGE HOVER COLOUR */
 }
 
 /* RON'S FEEDBACK ON ANIMATION INTERACTIONS */
