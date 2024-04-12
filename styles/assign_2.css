@@ -1,7 +1,10 @@
 /*----- Accessibility Considerations-----*/
 @media (prefers-reduced-motion: reduce) {
-  /* I was unable to implement this feedback */
+  .accordion {
+    display: block;
+  }
 }
+
 /*----- FONTS -----*/
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
